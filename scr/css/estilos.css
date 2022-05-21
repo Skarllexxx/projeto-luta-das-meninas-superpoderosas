@@ -101,7 +101,7 @@ main{
 .cabecalho .titulo{
     color: var(--cor-titulo-fraco);
     text-transform: uppercase;
-    font-size: 60px;
+    font-size: 52px;
     line-height: 102px;
     -webkit-text-stroke: 2px var(--color-titulo-forte);
 }
@@ -136,7 +136,7 @@ main{
     position: absolute;
     bottom: -15px;
     width: 100%;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .selecao-de-personagens .personagem-grande.selecionado::before{
