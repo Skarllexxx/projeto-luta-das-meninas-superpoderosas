@@ -1,0 +1,38 @@
+@media (max-width: 1280px){
+    .cabecalho .titulo{
+        font-size: 18px;
+    }
+
+    .selecao-de-personagens .lista-de-personagens{
+        max-width: 300px;
+    }
+
+    .selecao-de-personagens .lista-de-personagens .personagem{
+        width: 80px;
+        height: 80px;
+        position: center;
+    }
+}
+
+@media (max-width: 767px){
+    body::before{
+        background-image: url("../Imagens/fundo-para-dispositivos-moveis.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity:1;
+    }    
+
+    main{
+        padding: 0 8px;
+        justify-content: center;
+    }
+
+    .cabecalho{
+        font-size: 22px;
+    }
+
+    .selecao-de-personagens .personagem-grande{
+    display: none;}
+    
+}

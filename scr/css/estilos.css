@@ -1,0 +1,241 @@
+/* Início de fontes no corpo do site */
+body{
+    font-family: 'powerpuff girls', Courier, monospace;
+    background: var(--cor-secundaria);
+}
+/* Fim de fontes no corpo do site */
+
+/* Início da Palheta de Cores*/
+:root {
+    --cor-vermelha-principal: #D60223;
+    --cor-vermelha-media: #f89284;
+    --cor-vermelha-fraca: #ffbebe;
+
+    --cor-marrom-fraco: #ebd5d2;
+
+    --cor-azul-principal: #0271F7;
+    --cor-azul-media: #d3ffff;
+    --cor-azul-fraca: #8fbff8;
+
+    --cor-roxa-fraca: #c2c2f1;
+
+    --cor-titulo-fraco: #faefd8;
+    --cor-titulo-forte: #f77a2c;
+
+    --cor-padrao: #ffffff;
+    --cor-secundaria: #000000;
+}
+/* Fim da Palheta de Cores*/
+
+/* Começo das animações */
+@keyframes c-glowing-blue {
+    0% {
+      box-shadow: 0 0 5px var(--cor-azul-fraca), 0 0 5px var(--cor-azul-fraca), 0 0 15px var(--cor-azul-fraca), 0 0 20px var(--cor-azul-principal), 0 0 10px var(--cor-azul-principal), 0 0 10px var(--cor-azul-principal), 0 0 10px var(--cor-azul-principal), 0 0 10px var(--cor-azul-principal)
+    }
+  
+    to {
+      box-shadow: 0 0 2.5px var(--cor-azul-fraca), 0 0 2.5px var(--cor-azul-fraca), 0 0 7.5px var(--cor-azul-fraca), 0 0 10px var(--cor-azul-principal), 0 0 5px var(--cor-azul-principal), 0 0 5px var(--cor-azul-principal), 0 0 5px var(--cor-azul-principal), 0 0 2px var(--cor-azul-principal)
+    }
+  }
+  
+  @keyframes c-glowing-red {
+    0% {
+      box-shadow: 0 0 5px var(--cor-marrom-fraco), 0 0 5px var(--cor-marrom-fraco), 0 0 15px var(--cor-marrom-fraco), 0 0 20px var(--cor-vermelha-principal), 0 0 10px var(--cor-vermelha-principal), 0 0 10px var(--cor-vermelha-principal), 0 0 10px var(--cor-vermelha-principal), 0 0 10px var(--cor-vermelha-principal)
+    }
+  
+    to {
+      box-shadow: 0 0 2.5px var(--cor-marrom-fraco), 0 0 2.5px var(--cor-marrom-fraco), 0 0 7.5px var(--cor-marrom-fraco), 0 0 10px var(--cor-vermelha-principal), 0 0 5px var(--cor-vermelha-principal), 0 0 5px var(--cor-vermelha-principal), 0 0 5px var(--cor-vermelha-principal), 0 0 2px var(--cor-vermelha-principal)
+    }
+  }
+  
+  @keyframes text-glowing-blue {
+    0% {
+      text-shadow: 0 0 1px var(--cor-padrao), 0 0 1px var(--cor-padrao), 0 0 1px var(--cor-padrao), 0 0 1px var(--cor-azul-media), 0 0 5px var(--cor-azul-media), 0 0 2px var(--cor-azul-media), 0 0 10px var(--cor-azul-media), 0 0 10px var(--cor-azul-media)
+    }
+  
+    to {
+      text-shadow: 0 0 .5px var(--cor-padrao), 0 0 .5px var(--cor-padrao), 0 0 .5px var(--cor-padrao), 0 0 .5px var(--cor-azul-media), 0 0 5px var(--cor-azul-media), 0 0 .5px var(--cor-azul-media), 0 0 5px var(--cor-azul-media), 0 0 2px var(--cor-azul-media)
+    }
+  }
+  
+  @keyframes text-glowing-red {
+    0% {
+      text-shadow: 0 0 1px var(--cor-marrom-fraco), 0 0 1px var(--cor-marrom-fraco), 0 0 1px var(--cor-marrom-fraco), 0 0 1px var(--cor-vermelha-fraca), 0 0 5px var(--cor-vermelha-fraca), 0 0 2px var(--cor-vermelha-fraca), 0 0 10px var(--cor-vermelha-fraca), 0 0 10px var(--cor-vermelha-fraca)
+    }
+  
+    to {
+      text-shadow: 0 0 .5px var(--cor-marrom-fraco), 0 0 .5px var(--cor-marrom-fraco), 0 0 .5px var(--cor-marrom-fraco), 0 0 .5px var(--cor-vermelha-fraca), 0 0 5px var(--cor-vermelha-fraca), 0 0 .5px var(--cor-vermelha-fraca), 0 0 5px var(--cor-vermelha-fraca), 0 0 2px var(--cor-vermelha-fraca)
+    }
+  }
+  /* Fim das animações */
+
+  /* Background */
+body::before{
+    content: '';
+    background-image: url("../Imagens/the-power-puff-girls-hearts.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+/* Fim Background */
+
+/* Início do Cabeçalho */
+.cabecalho{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    animation: text-glowing-red .3s ease-in-out infinite;
+}
+
+.cabecalho .titulo{
+    color: var(--cor-titulo-fraco);
+    text-transform: uppercase;
+    font-size: 82px;
+    line-height: 102px;
+    -webkit-text-stroke: 2px var(--color-titulo-forte);
+}
+/* Fim do Cabecalho */
+
+/* Início da Grade de Personagens */
+.selecao-de-personagens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Início do Personagem Grande */
+.personagem-grande {
+    text-align: center;
+    width: 30%;
+    height: 70vh;
+    position: relative;
+}
+
+.personagem-grande img{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+.selecao-de-personagens .personagem-grande .nome h2{
+    color: var(--cor-padrao);
+    font-family: 'new athletic', sans-serif;
+    position: absolute;
+    bottom: -15px;
+    width: 100%;
+    font-size: 50px;
+}
+
+.selecao-de-personagens .personagem-grande.selecionado::before{
+    content: '';
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    background-color: var(--cor-azul-principal);
+}
+
+.selecao-de-personagens .personagem-grande.personagem-jogador-2::before{
+    content: '';
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    background-color: var(--cor-vermelha-principal);
+}
+
+
+/* Inicio da seleção de Personagem */
+.selecao-de-personagens .lista-de-personagens{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    justify-content: center;
+    gap: 12px;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem{
+    border: 2px solid, var(--cor-padrao);
+    background-color: var(--cor-padrao);
+    width: 30%;
+    height: 160px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 5px;
+    position: relative;
+    transition: 0.15s ease-in-out;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem.jogador-1-selecionado{
+    border: 2px solid var(--cor-azul-media);
+    animation: c-glowing-blue .3s ease-in-out infinite ;
+    animation-direction: alternate;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem:hover{
+    animation: c-glowing-blue .3s ease-in-out infinite ;
+    animation-direction: alternate;
+    transform: scale(1.07);
+    z-index: 2;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem.jogador-2-selecionado{
+    border: 2px solid var(--cor-vermelha-media);
+    animation: c-glowing-red .3s ease-in-out infinite ;
+    animation-direction: alternate;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem.jogador-2-selecionado:hover{
+    animation: c-glowing-red .3s ease-in-out infinite ;
+    animation-direction: alternate;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem .tag{
+    display: none;
+    font-family:'Times New Roman', Times, serif ;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: var(--cor-azul-media);
+    transition: opacity .3s ease-in-out;
+    animation: alternate;
+    animation: text-glowing-blue .3s ease-in-out infinite ;
+    animation-direction: alternate;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem.jogador-1-selecionado .tag{
+    display:block;
+    animation: text-glowing-blue .3s ease-in-out infinite ;
+    animation-direction: alternate;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem.jogador-2-selecionado .tag{
+    display:block;
+    animation: text-glowing-red .3s ease-in-out infinite ;
+    animation-direction: alternate;
+}
+/* Fim da seleção de Personagem */
+/* Fim da Grade de Personagens */
+
+
