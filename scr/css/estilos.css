@@ -101,7 +101,7 @@ main{
 .cabecalho .titulo{
     color: var(--cor-titulo-fraco);
     text-transform: uppercase;
-    font-size: 82px;
+    font-size: 60px;
     line-height: 102px;
     -webkit-text-stroke: 2px var(--color-titulo-forte);
 }
@@ -141,7 +141,7 @@ main{
 
 .selecao-de-personagens .personagem-grande.selecionado::before{
     content: '';
-    height: 60px;
+    height: 40px;
     width: 100%;
     position: absolute;
     bottom: -15px;
@@ -151,7 +151,7 @@ main{
 
 .selecao-de-personagens .personagem-grande.personagem-jogador-2::before{
     content: '';
-    height: 60px;
+    height: 40px;
     width: 100%;
     position: absolute;
     bottom: -15px;
